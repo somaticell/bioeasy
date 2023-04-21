@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/comm_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" layout="@layout/comm_toolbar"/>
+    <View android:id="@+id/bg" android:background="@drawable/order_bg" android:layout_width="match_parent" android:layout_height="@dimen/margin_10dp" android:layout_below="@+id/comm_toolbar"/>
+    <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/activity_padding" android:layout_width="match_parent" android:layout_height="@dimen/margin_50dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/tv_submit_order_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/rl_shopping_cart" android:background="@color/white" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="7">
+                <TextView android:textSize="@dimen/TextMedium" android:textColor="@color/gz_black" android:id="@+id/tv_total_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopping_payment" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_submit_order" android:background="@color/buying" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3">
+                <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shopping_submit_order" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:layout_gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/order_button_gallery_lyaout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_10dp" android:layout_marginRight="@dimen/margin_10dp"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/bg" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_go_address" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_left_10dp" android:src="@drawable/location" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/TextMedium" android:textColor="@color/colorTitle" android:id="@+id/tv_no_address_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_left_10dp" android:text="@string/shopping_order_select_address" android:layout_toRightOf="@+id/iv_location" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/img_select_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/activity_horizontal_margin" android:src="@drawable/health_information_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_address_wrap" android:paddingTop="@dimen/activity_padding_10dp" android:paddingBottom="@dimen/activity_padding_10dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10dp" android:layout_toRightOf="@+id/iv_location" android:layout_centerInParent="true">
+                    <TextView android:textSize="@dimen/TextMedium" android:textColor="@color/udream_toolbar_text_color" android:gravity="center_vertical" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxx"/>
+                    <TextView android:textSize="@dimen/TextMedium" android:textColor="@color/udream_toolbar_text_color" android:gravity="center_vertical" android:id="@+id/tv_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_30dp" android:text="xxx" android:layout_alignParentRight="true"/>
+                    <TextView android:textSize="@dimen/TextMedium" android:textColor="@color/udream_toolbar_text_color" android:gravity="center_vertical" android:id="@+id/tv_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxx" android:layout_below="@+id/tv_name"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView android:id="@+id/lv_order_goods_list" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@color/white" android:padding="@dimen/activity_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp">
+                    <TextView android:textSize="@dimen/TextMedium" android:textColor="@color/udream_toolbar_text_color" android:layout_width="100dp" android:layout_height="wrap_content" android:text="@string/shopping_fapiao" android:layout_centerVertical="true"/>
+                    <com.kyleduo.switchbutton.SwitchButton android:id="@+id/sbt_fapiao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_fapiaotaitou" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_10dp">
+                    <TextView android:textSize="@dimen/TextMedium" android:textColor="@color/udream_toolbar_text_color" android:id="@+id/tv_person" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_17dp" android:text="@string/shopping_fapiao_taitou" android:layout_centerVertical="true"/>
+                    <EditText android:textSize="@dimen/TextMedium" android:id="@+id/invoice_title" android:background="@null" android:paddingLeft="@dimen/padding_left10dp" android:layout_width="250dp" android:layout_height="@dimen/height" android:hint="@string/shopping_fapiao_type" android:layout_toRightOf="@+id/tv_person" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/height" android:layout_marginBottom="@dimen/margin_10dp">
+                    <TextView android:textSize="@dimen/TextMedium" android:textColor="@color/udream_toolbar_text_color" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_17dp" android:text="@string/shopping_pay_totalmoney" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="@dimen/TextMedium" android:id="@+id/tv_totalmoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/activity_horizontal_margin" android:text="￥200:00" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/height">
+                    <TextView android:textSize="@dimen/TextMedium" android:textColor="@color/udream_toolbar_text_color" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_17dp" android:text="@string/shopping_fare" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="@dimen/TextMedium" android:id="@+id/tv_fare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/activity_horizontal_margin" android:text="免运费" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/height" android:layout_marginTop="@dimen/margin_10dp">
+                    <TextView android:textSize="@dimen/TextMedium" android:textColor="@color/udream_toolbar_text_color" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_17dp" android:text="@string/shopping_injection" android:layout_centerVertical="true"/>
+                    <EditText android:textSize="@dimen/TextMedium" android:id="@+id/tv_remark" android:background="@null" android:layout_width="250dp" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tv_remark" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

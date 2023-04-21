@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <android.support.design.widget.AppBarLayout android:id="@+id/layout_appbar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" sweet:elevation="0dp">
+        <include android:id="@+id/goods_order_item" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/goods_show_list_item"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:layout_gravity="right" android:id="@+id/show_eva_btn" android:background="@drawable/selector_login_btn" android:layout_width="80dp" android:layout_height="@dimen/height" android:layout_marginTop="14dp" android:layout_marginRight="@dimen/activity_horizontal_margin" android:text="@string/order_show_evaluation" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/eva_panel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:orientation="vertical" android:padding="@dimen/activity_padding" android:layout_width="match_parent" android:layout_height="wrap_content" sweet:layout_scrollFlags="5">
+                <net.oschina.common.widget.RichEditText android:textSize="@dimen/text_size_16" android:textColor="#111111" android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/tv_evaluation" android:background="@color/white" android:paddingBottom="32dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="这次买的商品满意吗？写点心得给其他顾客参考吧。长度在6-500字之间" android:minLines="3"/>
+                <TextView android:id="@+id/tv_evaluation_show" android:padding="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+            </FrameLayout>
+            <RelativeLayout android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" sweet:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <TextView android:gravity="center" android:id="@+id/tv_eva" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="评价"/>
+                <RatingBar android:id="@+id/eva_quality" android:layout_width="wrap_content" android:layout_height="16dp" android:layout_marginLeft="@dimen/margin_5dp" android:layout_marginTop="6dp" android:numStars="5" android:rating="5" android:layout_toRightOf="@+id/tv_eva" style="@style/roomRatingBar"/>
+            </RelativeLayout>
+            <RelativeLayout android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" sweet:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <TextView android:id="@+id/tv_eva_img" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加图片(您最多可上传3张图片)"/>
+                <cn.com.bioeasy.healty.app.healthapp.widgets.gallary.widget.TweetPicturesPreviewer android:id="@+id/recycler_images" android:layout_width="180dp" android:layout_height="60dp" android:layout_below="@+id/tv_eva_img"/>
+                <ImageView android:id="@+id/iv_picture" android:padding="4dp" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/ic_tweet_add" android:scaleType="fitCenter" android:layout_below="@+id/tv_eva_img"/>
+                <Button android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/bt_goods_eva" android:background="@drawable/selector_login_btn" android:layout_width="320dp" android:layout_height="@dimen/height" android:layout_marginTop="14dp" android:text="@string/order_evaluation" android:layout_below="@+id/recycler_images" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+</LinearLayout>

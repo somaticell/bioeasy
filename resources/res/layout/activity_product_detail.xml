@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/all_bg" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_title_root" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_back" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/btn_back" android:scaleType="centerInside"/>
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.gxz.PagerSlidingTabStrip android:textSize="15sp" android:textColor="@color/udream_toolbar_text_color" android:layout_gravity="center" android:id="@+id/psts_tabs" android:layout_width="wrap_content" android:layout_height="32dp" sweet:pstsIndicatorColor="@color/udream_toolbar_text_color" sweet:pstsDividerColor="@android:color/transparent" sweet:pstsIndicatorHeight="2dp" sweet:pstsUnderlineHeight="0dp" sweet:pstsDividerPaddingTopBottom="0dp" sweet:pstsTabPaddingLeftRight="12dp" sweet:pstsShouldExpand="false" sweet:pstsTextAllCaps="false" sweet:pstsTextSelectedColor="@color/udream_toolbar_text_color" sweet:pstsScaleZoomMax="0" sweet:pstsSmoothScrollWhenClickTab="false"/>
+            <TextView android:textSize="15sp" android:textColor="#ffffff" android:id="@+id/tv_titles" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="图文详情"/>
+        </LinearLayout>
+    </LinearLayout>
+    <cn.com.bioeasy.healty.app.healthapp.widgets.NoScrollViewPager android:id="@+id/vp_content" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/margin_10dp" android:layout_weight="1"/>
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+        <RelativeLayout android:id="@+id/rl_shopping_cart" android:background="@color/white" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2">
+            <ImageView android:id="@+id/iv_buy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/marginTop_5dp" android:src="@drawable/shopping_cart" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/gz_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/marginTop_5dp" android:text="@string/shopping_cart" android:layout_below="@+id/iv_buy" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_addshopping_cart" android:background="@color/addshopping_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="4">
+            <TextView android:textSize="@dimen/TextXLarge" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_add_shopping_cart" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_buy" android:background="@color/buying" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="4">
+            <TextView android:textSize="@dimen/TextXLarge" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_buying" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

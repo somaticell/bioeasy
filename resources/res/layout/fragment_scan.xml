@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/content_bg" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.SampleMessageTile">
+        <TextView android:textSize="14sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/horizontal_page_margin" android:layout_marginTop="@dimen/vertical_page_margin" android:layout_marginRight="@dimen/horizontal_page_margin" android:layout_marginBottom="@dimen/vertical_page_margin" android:text="@string/intro_message" style="@style/Widget.SampleMessage"/>
+    </LinearLayout>
+    <ListView android:id="@+id/listView1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@+id/progressBar1" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_alignParentStart="true"/>
+        <ToggleButton android:textStyle="bold" android:textColor="@android:color/holo_blue_dark" android:id="@+id/tBtn_scan" android:background="@drawable/btn_sel" android:layout_width="match_parent" android:layout_height="wrap_content" android:button="@null" android:textOn="@string/menu_stop" android:textOff="@string/menu_scan" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

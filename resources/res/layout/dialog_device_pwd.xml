@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom" android:orientation="vertical" android:background="#e9e9e9" android:layout_width="match_parent" android:layout_height="180dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="150dp" android:layout_below="@+id/header">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/margin_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:layout_marginBottom="@dimen/margin_10dp">
+                <TextView android:textSize="@dimen/TextLarge" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="样品编号:"/>
+                <EditText android:id="@+id/id_sample_no" android:background="@drawable/edit_text_bg" android:paddingLeft="@dimen/edit_text_padding" android:layout_width="250dp" android:layout_height="30dp" android:layout_marginLeft="@dimen/margin_10dp" style="@style/comm_text_title"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:layout_marginBottom="@dimen/margin_10dp" android:layout_below="@+id/header">
+                <TextView android:textSize="@dimen/TextLarge" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="样品名称:"/>
+                <AutoCompleteTextView android:textSize="@dimen/text_size_12" android:textColor="@color/black_alpha_deep" android:textColorHint="@color/hint_color" android:id="@+id/id_sample_name" android:background="@drawable/edit_text_bg" android:paddingLeft="@dimen/padding_left10dp" android:layout_width="250dp" android:layout_height="30dp" android:layout_marginLeft="@dimen/margin_10dp" android:hint="输入名称或拼音首字母" android:singleLine="true" android:maxLength="12" android:completionThreshold="1" android:layout_centerVertical="true" android:dropDownWidth="230dp" android:imeOptions="actionSearch" android:dropDownHeight="200dp" android:layout_toEndOf="@+id/tv_person"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/header" android:background="@color/hint_color" android:layout_width="match_parent" android:layout_height="@dimen/height">
+        <Button android:textSize="@dimen/text_size_12" android:id="@+id/btn_cancle" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消"/>
+        <Button android:textSize="@dimen/text_size_12" android:textColor="@color/app_primary" android:id="@+id/btn_confire" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确认" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

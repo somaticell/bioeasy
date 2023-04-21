@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingTop="@dimen/margin_10dp" android:paddingBottom="@dimen/margin_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/TextMedium" android:id="@+id/tv_person" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:text="李四" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/text_size_14" android:id="@+id/tv_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/activity_horizontal_margin" android:text="13788888888" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/app_primary" android:id="@+id/tv_default_address" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:text="@string/order_default_address"/>
+        <TextView android:textSize="@dimen/text_size_14" android:ellipsize="end" android:id="@+id/tv_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_5dp" android:text="广东省 深圳市 宝安区 留仙一路2-1易瑞生物xxxxxxxx" android:maxLines="2" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </LinearLayout>
+    <View android:layout_marginTop="@dimen/margin_10dp" style="@style/separator_line"/>
+    <RelativeLayout android:id="@+id/rl_manager" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_5dp">
+        <CheckBox android:id="@+id/id_cb_select_child" android:background="@null" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:button="@drawable/selector_check_bg" android:text="@string/setting_default_address" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/TextMedium" android:id="@+id/tv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:text="@string/delete" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/TextMedium" android:id="@+id/tv_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit" android:layout_toLeftOf="@+id/tv_delete" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/TextLarge" android:id="@+id/tv_market_address" android:background="@color/white" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/margin_10dp" android:paddingBottom="@dimen/margin_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:text="@string/address_information"/>
+    <LinearLayout style="@style/separator_line"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="@dimen/activity_padding_10dp" android:paddingBottom="@dimen/activity_padding_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <lecho.lib.hellocharts.view.PieChartView android:id="@+id/chart" android:layout_width="wrap_content" android:layout_height="160dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/TextLarge" android:id="@+id/tv_test_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/test_totalNumber"/>
+            <TextView android:textSize="@dimen/TextLarge" android:id="@+id/tv_test_ok_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/negative_batch"/>
+            <TextView android:textSize="@dimen/TextLarge" android:id="@+id/tv_test_ng_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/positive_batch"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TableLayout android:id="@+id/table" android:background="@color/app_background" android:layout_width="match_parent" android:layout_height="31dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/table_frame_gray" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/colorTitle" android:gravity="center" android:layout_width="match_parent" android:layout_height="31dp" android:text="@string/date"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/table_frame_gray" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/colorTitle" android:gravity="center" android:layout_width="match_parent" android:layout_height="31dp" android:text="@string/sample"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/table_frame_gray" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/colorTitle" android:gravity="center" android:layout_width="match_parent" android:layout_height="31dp" android:text="@string/detection_project"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/table_frame_gray" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/colorTitle" android:gravity="center" android:layout_width="match_parent" android:layout_height="31dp" android:text="@string/detection_result"/>
+                </LinearLayout>
+            </TableRow>
+        </LinearLayout>
+    </TableLayout>
+</LinearLayout>

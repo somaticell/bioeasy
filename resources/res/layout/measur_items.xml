@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/measur_img" android:layout_width="120dp" android:layout_height="120dp" android:layout_marginLeft="@dimen/margin_10dp" android:layout_marginTop="@dimen/margin_10dp"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10dp" android:layout_marginTop="@dimen/margin_20dp" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/margin_20dp">
+            <TextView android:textSize="@dimen/TextMedium" android:id="@+id/tv_productName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10dp" android:layout_marginTop="@dimen/margin_10dp" android:text="产品名字小星星小星星小星星想休息休息" style="@style/textStyle.Normal.black"/>
+            <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/alpha_gray" android:id="@+id/tv_productSummary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10dp" android:layout_marginTop="@dimen/margin_10dp" android:text="@string/explain"/>
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp">
+                <TextView android:textSize="@dimen/TextXLarge" android:textColor="#ec0f38" android:id="@+id/tv_productPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10dp" android:text="" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/TextSmall" android:textColor="#999999" android:id="@+id/tv_old_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/TextSmall" android:textColor="#999999" android:id="@+id/count" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_10dp" android:text="2016.10.20" android:textAlignment="textEnd"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/margin_5dp"/>
+</LinearLayout>

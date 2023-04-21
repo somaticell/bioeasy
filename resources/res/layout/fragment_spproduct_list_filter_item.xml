@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/bg_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/TextMedium" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/filter_title_txtv" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:singleLine="true" style="@style/textStyle.Small.black"/>
+    <cn.com.bioeasy.healty.app.healthapp.modules.mall.view.tagview.TagListView android:id="@+id/filter_taglstv" android:paddingTop="5dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_below="@+id/filter_title_txtv" sweet:horizontalSpacing="@dimen/tag_horizontal_spacing" sweet:verticalSpacing="@dimen/tag_vertical_spacing" sweet:orientation="horizontal"/>
+</RelativeLayout>

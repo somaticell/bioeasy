@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/hint_color" android:layout_width="match_parent" android:layout_height="@dimen/height">
+        <Button android:textSize="@dimen/text_size_12" android:id="@+id/btn_cancle" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消"/>
+        <Button android:textSize="@dimen/text_size_12" android:textColor="@color/app_primary" android:id="@+id/btn_confire" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确认" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="160dp">
+        <cn.com.bioeasy.app.widgets.wheel.WheelView android:id="@+id/id_province" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <cn.com.bioeasy.app.widgets.wheel.WheelView android:id="@+id/id_city" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <cn.com.bioeasy.app.widgets.wheel.WheelView android:id="@+id/id_district" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

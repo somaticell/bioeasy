@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <include android:id="@+id/comm_toolbar" layout="@layout/comm_toolbar"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/lv_eva_goods_list" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp"/>
+    <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/activity_padding" android:paddingTop="@dimen/margin_10dp" android:paddingBottom="@dimen/margin_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp">
+        <TextView android:gravity="center_vertical" android:id="@+id/tv_eva" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单服务评价"/>
+        <RatingBar android:gravity="center_vertical" android:id="@+id/rb_order_eva" android:layout_width="wrap_content" android:layout_height="16dp" android:layout_marginLeft="@dimen/margin_10dp" android:numStars="5" android:rating="5" android:layout_toRightOf="@+id/tv_eva" style="@style/roomRatingBar"/>
+    </RelativeLayout>
+    <Button android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/bt_order_eva" android:background="@drawable/red_button_background" android:layout_width="320dp" android:layout_height="@dimen/height" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/order_evaluation" android:layout_centerHorizontal="true"/>
+</LinearLayout>

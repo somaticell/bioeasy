@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_centerInParent="true">
+        <com.jude.rollviewpager.RollPagerView android:id="@+id/roll_view_pager" android:layout_width="match_parent" android:layout_height="160dp" android:layout_alignParentTop="true" android:layout_alignParentStart="true" sweet:rollviewpager_play_delay="3000"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <FrameLayout android:layout_gravity="center" android:id="@+id/fl_search_layout" android:background="@drawable/search_bg" android:layout_width="230dp" android:layout_height="30dp" android:layout_margin="5dp">
+                <TextView android:textSize="@dimen/text_size_12" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/search_et_input" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/search_goods" android:drawableLeft="@drawable/search" android:drawablePadding="5dp"/>
+            </FrameLayout>
+            <ImageView android:layout_gravity="center" android:id="@+id/iv_shop_cart" android:layout_width="30dp" android:layout_height="wrap_content" android:src="@drawable/shopping_cart"/>
+            <TextView android:textSize="@dimen/TextMedium" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20dp" android:text="@string/order"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

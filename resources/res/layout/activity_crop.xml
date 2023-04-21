@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/gz_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.com.bioeasy.healty.app.healthapp.widgets.gallary.view.CropLayout android:id="@+id/cropLayout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="16sp" android:textColor="#fff" android:gravity="center" android:id="@+id/tv_crop" android:background="@drawable/ic_material_ripple" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/determine" android:layout_weight="1" android:onClick="onClick"/>
+        <View android:background="#88ffffff" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+        <TextView android:textSize="16sp" android:textColor="#fff" android:gravity="center" android:id="@+id/tv_cancel" android:background="@drawable/ic_material_ripple" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/cancel" android:layout_weight="1" android:onClick="onClick"/>
+    </LinearLayout>
+</FrameLayout>

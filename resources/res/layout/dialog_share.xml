@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/black_alpha_deep" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:text="分享到..."/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_30dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_share_wechat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wechat_share"/>
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/black_alpha_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:text="@string/shopping_pay_weixin"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_share_wechat_zone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wechat_zone_share"/>
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/black_alpha_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:text="微信朋友圈"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_share_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qq_share"/>
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/black_alpha_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:text="QQ好友"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_30dp" android:layout_marginBottom="@dimen/margin_10dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_share_qqzone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qqzone_share"/>
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/black_alpha_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:text="QQ空间"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_share_weibo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/weibo_share"/>
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/black_alpha_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:text="新浪微博"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/imageView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more"/>
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/black_alpha_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:text="复制链接"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/black_alpha_deep" android:gravity="center" android:id="@+id/tv_cancel" android:layout_width="match_parent" android:layout_height="@dimen/height" android:text="@string/calcle"/>
+    </RelativeLayout>
+</LinearLayout>

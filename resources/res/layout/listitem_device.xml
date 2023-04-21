@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/TextLarge" android:textColor="@android:color/holo_blue_dark" android:gravity="center_vertical" android:id="@+id/txt_blue_name" android:padding="@dimen/activity_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_data"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/sdv_item_head_img" android:layout_width="200dp" android:layout_height="match_parent" sweet:placeholderImage="@drawable/default_bg2" sweet:progressBarImage="@drawable/progress_red" sweet:progressBarImageScaleType="5" sweet:progressBarAutoRotateInterval="5000" sweet:actualImageScaleType="7"/>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/comm_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" layout="@layout/comm_toolbar_edit"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/rl_header" android:background="@drawable/record_bg" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="@dimen/margin_1px" android:layout_below="@+id/tl_1" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/rl_select_cycle" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.8">
+            <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/cycle"/>
+            <Spinner android:textSize="@dimen/TextSmall" android:id="@+id/tv_record_days" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="center"/>
+        </LinearLayout>
+        <View android:background="@drawable/record_white" android:layout_width="4px" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/test_number"/>
+            <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/white" android:id="@+id/tv_test_total_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="300"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qualified_number"/>
+            <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/white" android:id="@+id/tv_test_ok_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="200"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_qualified_number"/>
+            <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/white" android:id="@+id/tv_test_ng_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="100"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:layout_gravity="center_vertical" android:id="@+id/comm_record" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_10dp" android:layout_below="@+id/rl_header" layout="@layout/fragment_comm_record"/>
+</LinearLayout>

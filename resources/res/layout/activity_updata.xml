@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/comm_toolbar" layout="@layout/comm_toolbar"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="@dimen/margin_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/city" style="@style/comm_text_title"/>
+            <Button android:layout_gravity="center" android:id="@+id/id_city" android:background="@drawable/select_dow2" android:layout_width="120dp" android:layout_height="30dp" android:layout_marginLeft="@dimen/margin_10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/region" style="@style/comm_text_title"/>
+            <Button android:id="@+id/id_distinct" android:background="@drawable/select_dow2" android:layout_width="120dp" android:layout_height="30dp" android:layout_marginLeft="@dimen/margin_10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="@dimen/margin_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market" style="@style/comm_text_title"/>
+        <EditText android:id="@+id/id_market" android:background="@drawable/edit_text_bg" android:paddingLeft="@dimen/edit_text_padding" android:layout_width="295dp" android:layout_height="30dp" android:layout_marginLeft="@dimen/margin_10dp" style="@style/comm_text_title"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="@dimen/margin_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sample_name" style="@style/comm_text_title"/>
+        <EditText android:id="@+id/id_sample_name" android:background="@drawable/edit_text_bg" android:paddingLeft="@dimen/edit_text_padding" android:layout_width="267dp" android:layout_height="30dp" android:layout_marginLeft="@dimen/margin_10dp"/>
+    </LinearLayout>
+    <android.support.design.widget.AppBarLayout android:id="@+id/layout_appbar" android:background="@color/white" android:paddingBottom="@dimen/activity_padding" android:layout_width="match_parent" android:layout_height="wrap_content" sweet:elevation="0dp">
+        <FrameLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" sweet:layout_scrollFlags="5">
+            <net.oschina.common.widget.RichEditText android:textSize="@dimen/text_size_16" android:textColor="#111111" android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/edit_content" android:background="@drawable/edit_text_bg" android:padding="@dimen/edit_text_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/UPLOAD_REMARKS" android:minLines="4"/>
+        </FrameLayout>
+        <RelativeLayout android:paddingLeft="@dimen/activity_padding" android:paddingRight="@dimen/activity_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" sweet:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <cn.com.bioeasy.healty.app.healthapp.widgets.gallary.widget.TweetPicturesPreviewer android:id="@+id/recycler_images" android:layout_width="match_parent" android:layout_height="120dp"/>
+            <ImageView android:id="@+id/iv_picture" android:padding="4dp" android:layout_width="120dp" android:layout_height="120dp" android:src="@drawable/ic_tweet_add"/>
+            <Button android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/upload" android:background="@drawable/selector_login_btn" android:layout_width="300dp" android:layout_height="@dimen/height" android:layout_marginTop="14dp" android:text="@string/upload_tip" android:layout_below="@+id/recycler_images" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.com.bioeasy.healty.app.healthapp.widgets.gallary.widget.ImagePreviewView android:layout_gravity="center" android:id="@+id/iv_preview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <net.oschina.common.widget.Loading android:layout_gravity="center" android:id="@+id/loading" android:layout_width="32dp" android:layout_height="32dp" sweet:gForegroundLineSize="1dp" sweet:gBackgroundColor="@color/white_alpha_16" sweet:gForegroundColor="@color/white_alpha_240"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/iv_default" android:visibility="gone" android:layout_width="@dimen/size_72" android:layout_height="@dimen/size_72" android:src="@drawable/ic_preview_split_graph" android:scaleType="centerInside" android:contentDescription="@string/app_name"/>
+</FrameLayout>

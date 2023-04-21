@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin">
+        <TextView android:textSize="@dimen/TextSmall" android:id="@+id/tv_eva_username" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publisher"/>
+        <RatingBar android:id="@+id/eva_quality" android:layout_width="wrap_content" android:layout_height="16dp" android:layout_marginLeft="@dimen/margin_10dp" android:layout_marginTop="6dp" android:numStars="5" android:rating="5" style="@style/roomRatingBar"/>
+        <TextView android:textSize="@dimen/TextSmall" android:layout_gravity="right" android:id="@+id/tv_eva_time" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2016-02-15" android:textAlignment="textEnd"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin">
+        <TextView android:textSize="@dimen/TextSmall" android:id="@+id/tv_eva_content" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxx"/>
+        <HorizontalScrollView android:layout_gravity="center_vertical" android:id="@+id/order_product_scrollv" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/eva_list_gallery_lyaout" android:background="@color/bg_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/tv_eva_spec" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    </LinearLayout>
+    <View style="@style/separator_line"/>
+</LinearLayout>

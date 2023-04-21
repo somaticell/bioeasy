@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:skin="http://schemas.android.com/android/skin" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="30dp">
+    <LinearLayout android:layout_width="40dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="@dimen/TextSmall" android:gravity="center" android:id="@+id/tv_date" android:layout_width="match_parent" android:layout_height="match_parent" android:text="2016.02.03 10:20:30"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="@dimen/TextSmall" android:gravity="center" android:id="@+id/tv_sample_name" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/sample_name"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="@dimen/TextSmall" android:gravity="center" android:id="@+id/tv_strip_name" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/detection_project"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="@dimen/TextSmall" android:gravity="center" android:id="@+id/tv_test_result" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/detection_result"/>
+    </LinearLayout>
+    <LinearLayout android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="@dimen/text_size_14" android:gravity="center" android:id="@+id/tv_upload_status" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/state"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.8">
+        <TextView android:textSize="@dimen/TextSmall" android:gravity="center" android:id="@+id/tv_look" android:layout_width="match_parent" android:layout_height="match_parent" android:text=""/>
+    </LinearLayout>
+</LinearLayout>

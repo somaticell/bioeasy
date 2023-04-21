@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/activity_boss" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="?attr/colorPrimary" android:paddingTop="64dp" android:paddingBottom="40dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="22sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/edt_key" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/common_hint_key" android:inputType="text" android:labelFor="@+id/edt_key"/>
+    </FrameLayout>
+    <TextView android:textSize="20sp" android:textColor="@color/colorAccent" android:gravity="center" android:id="@+id/txt_token" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

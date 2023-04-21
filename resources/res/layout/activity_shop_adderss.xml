@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/comm_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" layout="@layout/comm_toolbar_edit"/>
+    <FrameLayout android:id="@+id/lr_exit_address" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_10dp" android:layout_below="@+id/comm_toolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@+id/test_list_view_frame" android:background="#f0f0f0" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="7" sweet:ptr_resistance="1.7" sweet:ptr_ratio_of_header_height_to_refresh="1.2" sweet:ptr_duration_to_close="200" sweet:ptr_duration_to_close_header="1000" sweet:ptr_pull_to_fresh="false" sweet:ptr_keep_header_when_refresh="true">
+                <ListView android:id="@+id/lv_address" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:dividerHeight="2dp"/>
+            </com.chanven.lib.cptr.PtrClassicFrameLayout>
+            <Button android:textSize="@dimen/text_size_14" android:id="@+id/btn_add_address2" android:background="@color/blue_btn_bg_color" android:layout_width="match_parent" android:layout_height="0dp" android:text="@string/shopping_order_add_address" android:layout_weight="1" android:layout_below="@+id/lv_address" android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/lr_no_address" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_10dp" android:layout_below="@+id/comm_toolbar">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/marginTop_40dp" android:src="@drawable/address"/>
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/gz_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/marginTop_20dp" android:text="@string/shopping_order_no_address"/>
+            <Button android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:id="@+id/btn_add_address" android:background="@drawable/selector_login_btn" android:layout_width="300dp" android:layout_height="@dimen/height44" android:layout_marginTop="@dimen/marginTop_40dp" android:text="@string/shopping_order_add_address"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

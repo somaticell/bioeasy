@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" layout="@layout/comm_toolbar"/>
+    <RelativeLayout android:id="@+id/main_vp_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="8"/>
+    <fragment android:id="@+id/main_bottom" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true" class="cn.com.bioeasy.healty.app.healthapp.base.TabsFragment"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:skin="http://schemas.android.com/android/skin" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/bg_amount_layout" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/divider" android:showDividers="middle">
+    <Button android:gravity="center" android:id="@+id/btnDecrease" android:background="@drawable/btn_amount" android:layout_width="0dp" android:layout_height="match_parent" android:text="-" android:layout_weight="1"/>
+    <TextView android:gravity="center" android:id="@+id/etAmount" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:minWidth="60dp" android:text="1" android:layout_weight="2" android:inputType="number"/>
+    <Button android:gravity="center" android:id="@+id/btnIncrease" android:background="@drawable/btn_amount" android:layout_width="0dp" android:layout_height="match_parent" android:text="+" android:layout_weight="1"/>
+</LinearLayout>

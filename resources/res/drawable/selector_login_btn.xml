@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_pressed="true" android:drawable="@drawable/btn_login_corner__press_bg"/>
+    <item android:state_selected="true" android:drawable="@drawable/health_record_press"/>
+    <item android:state_enabled="false" android:drawable="@drawable/btn_login_corner__disable_bg"/>
+    <item android:drawable="@drawable/btn_login_corner__normal_bg"/>
+</selector>

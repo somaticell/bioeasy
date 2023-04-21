@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/activity_padding" android:paddingTop="@dimen/activity_padding_5dp" android:paddingRight="@dimen/activity_padding" android:paddingBottom="@dimen/activity_padding_5dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RatingBar android:id="@+id/eva_quality" android:layout_width="wrap_content" android:layout_height="16dp" android:numStars="5" android:rating="5" style="@style/roomRatingBar"/>
+        <TextView android:textSize="@dimen/TextSmall" android:id="@+id/tv_eva_quality" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5.0分"/>
+        <TextView android:textSize="@dimen/TextSmall" android:layout_gravity="right" android:id="@+id/tv_good_comment_rate" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="好评率" android:textAlignment="textEnd"/>
+    </LinearLayout>
+    <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:layout_gravity="center" android:id="@+id/ll_comment" android:background="@color/white" android:padding="@dimen/activity_padding_10dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/tv_all_comment" android:text="@string/all" android:layout_weight="1" android:textAlignment="center" style="@style/tab_bar_text"/>
+        <TextView android:id="@+id/tv_good_comment" android:text="@string/good" android:layout_weight="1" android:textAlignment="center" style="@style/tab_bar_text"/>
+        <TextView android:id="@+id/tv_medial_comment" android:text="@string/review" android:layout_weight="1" android:textAlignment="center" style="@style/tab_bar_text"/>
+        <TextView android:id="@+id/tv_bad_comment" android:text="@string/negative_comment" android:layout_weight="1" android:textAlignment="center" style="@style/tab_bar_text"/>
+    </LinearLayout>
+    <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:gravity="center" android:id="@+id/ll_empty_comment" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="123dp" android:layout_marginTop="@dimen/margin_10dp">
+        <TextView android:textSize="13dp" android:textColor="#888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无评论"/>
+    </LinearLayout>
+    <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@+id/goods_eva_view_frame" android:background="#f0f0f0" android:layout_width="match_parent" android:layout_height="match_parent" sweet:ptr_resistance="1.7" sweet:ptr_ratio_of_header_height_to_refresh="1.2" sweet:ptr_duration_to_close="200" sweet:ptr_duration_to_close_header="1000" sweet:ptr_pull_to_fresh="false" sweet:ptr_keep_header_when_refresh="true">
+        <android.support.v7.widget.RecyclerView android:id="@+id/goods_eva_lv" android:background="@color/white" android:scrollbars="none" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_10dp" android:divider="#00000000" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true"/>
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+</LinearLayout>

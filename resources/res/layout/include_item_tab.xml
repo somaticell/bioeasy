@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="44dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:textSize="15sp" android:textColor="#222222" android:gravity="center" android:id="@+id/tv_goods_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/commodity_details" android:layout_weight="1"/>
+            <TextView android:textSize="15sp" android:textColor="#222222" android:gravity="center" android:id="@+id/tv_goods_config" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/specification_parameter" android:layout_weight="1"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="2dp">
+            <View android:layout_gravity="bottom" android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <View android:layout_gravity="left" android:id="@+id/v_tab_cursor" android:background="#ec0f38" android:layout_width="0dp" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fl_content" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#e9e9e9" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/header" android:background="@color/hint_color" android:layout_width="match_parent" android:layout_height="@dimen/height">
+        <Button android:textSize="@dimen/text_size_12" android:id="@+id/btn_cancle" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oad_cancel"/>
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@android:color/black" android:id="@+id/tv_device_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true"/>
+        <Button android:textSize="@dimen/text_size_12" android:textColor="@color/app_primary" android:id="@+id/btn_confire" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/confire" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <cn.com.bioeasy.app.widgets.wheel.WheelView android:id="@+id/wheel_view" android:layout_width="match_parent" android:layout_height="200dp" android:layout_below="@+id/header"/>
+    <RelativeLayout android:id="@+id/rl_seekbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="200dp" android:layout_below="@+id/header">
+        <SeekBar android:id="@+id/seebar" android:paddingLeft="40dp" android:paddingRight="40dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="4dp" android:max="100" android:minHeight="4dp" android:thumb="@drawable/seekbar_bg" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

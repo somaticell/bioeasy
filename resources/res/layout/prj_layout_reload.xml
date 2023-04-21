@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:skin="http://schemas.android.com/android/skin" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/prj_layout_reload" android:background="@color/common_bg_dark" android:layout_width="match_parent" android:layout_height="match_parent" skin:enable="true">
+    <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/common_tv_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prj_reload_hint" android:layout_centerInParent="true"/>
+</RelativeLayout>

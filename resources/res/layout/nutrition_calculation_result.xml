@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/calculation_result" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_10dp">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TableLayout android:id="@+id/table" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20dp">
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout style="@style/nutrition_ll"/>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/textView8" android:text="@string/content" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:text="@string/daily_input" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/textView9" android:text="@string/nutrition_type1" style="@style/nutrition_text"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/heat" android:text="结果" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/heat_s" android:text="@string/daily_input_standard" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/textView4" android:text="@string/nutrition_type2" style="@style/nutrition_text"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/protein" android:text="结果" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/protein_s" android:text="@string/daily_input_standard" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/textView5" android:text="@string/nutrition_type3" style="@style/nutrition_text"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/fat" android:text="结果" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/fat_s" android:text="@string/daily_input_standard" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/textView10" android:text="@string/nutrition_type4" style="@style/nutrition_text"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/tangshui" android:text="结果" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/tangshui_s" android:text="@string/daily_input_standard" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:text="@string/nutrition_type5" style="@style/nutrition_text"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/calcium" android:text="结果" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/calcium_s" android:text="@string/daily_input_standard" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:text="@string/nutrition_type6" style="@style/nutrition_text"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/phosphorus" android:text="结果" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/phosphorus_s" android:text="@string/daily_input_standard" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:text="@string/nutrition_type7" style="@style/nutrition_text"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/tie" android:text="结果" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/tie_s" android:text="@string/daily_input_standard" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:text="@string/nutrition_type8" style="@style/nutrition_text"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/bo" android:text="结果" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/bo_s" android:text="@string/daily_input_standard" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/textView6" android:text="@string/nutrition_type9" style="@style/nutrition_text"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/wei_a" android:text="结果" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/wei_a_s" android:text="@string/daily_input_standard" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/textView7" android:text="@string/nutrition_type10" style="@style/nutrition_text"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/wei_b1" android:text="结果" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/wei_b1_s" android:text="@string/daily_input_standard" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:text="@string/nutrition_type11" style="@style/nutrition_text"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/wei_b2" android:text="结果" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/wei_b2_s" android:text="@string/daily_input_standard" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:text="@string/nutrition_type12" style="@style/nutrition_text"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/wei_c" android:text="结果" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                    <LinearLayout style="@style/nutrition_ll">
+                        <TextView android:id="@+id/wei_c_s" android:text="@string/daily_input_standard" style="@style/nutrition_text2"/>
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

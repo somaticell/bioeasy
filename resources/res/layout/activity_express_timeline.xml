@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/image" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="16dp" android:src="@drawable/ic_check"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/relative" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_alignParentTop="true" android:layout_toEndOf="@+id/image">
+        <TextView android:textSize="14sp" android:ellipsize="end" android:id="@+id/tv_express_progress" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/demand_success"/>
+        <TextView android:textSize="12sp" android:ellipsize="end" android:id="@+id/tv_express_time" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="2015-9-28" android:layout_below="@+id/tv_express_progress"/>
+        <View android:id="@+id/view_4" android:background="#a6a6a6" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/view_2" android:background="#a6a6a6" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginLeft="23dp" android:layout_below="@+id/image" android:layout_alignBottom="@+id/relative"/>
+</RelativeLayout>

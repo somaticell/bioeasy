@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:skin="http://schemas.android.com/android/skin" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="18sp" android:id="@+id/right_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

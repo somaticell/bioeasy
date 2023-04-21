@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="te_health" />
+    <version value="19" />
+    <list>
+        <!-- 本地购物车 -->
+        <mapping class="cn.com.bioeasy.healty.app.healthapp.modules.mall.bean.ShopCardItem" />
+
+        <!-- 本地检测数据 -->
+        <mapping class="cn.com.bioeasy.healty.app.healthapp.modules.test.bean.SampleData" />
+        <mapping class="cn.com.bioeasy.healty.app.healthapp.modules.test.bean.SampleItemData" />
+
+        <mapping class="cn.com.bioeasy.healty.app.healthapp.modules.home.bean.MarketSearchItem" />
+
+    </list>
+</litepal>

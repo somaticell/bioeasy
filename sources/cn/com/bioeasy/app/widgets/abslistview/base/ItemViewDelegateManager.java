@@ -1,0 +1,91 @@
+package cn.com.bioeasy.app.widgets.abslistview.base;
+
+import android.support.v4.util.SparseArrayCompat;
+import cn.com.bioeasy.app.widgets.abslistview.ViewHolder;
+
+public class ItemViewDelegateManager<T> {
+    SparseArrayCompat<ItemViewDelegate<T>> delegates = new SparseArrayCompat<>();
+
+    public int getItemViewDelegateCount() {
+        return this.delegates.size();
+    }
+
+    public ItemViewDelegateManager<T> addDelegate(ItemViewDelegate<T> delegate) {
+        int viewType = this.delegates.size();
+        if (delegate != null) {
+            this.delegates.put(viewType, delegate);
+            int viewType2 = viewType + 1;
+        }
+        return this;
+    }
+
+    public ItemViewDelegateManager<T> addDelegate(int viewType, ItemViewDelegate<T> delegate) {
+        if (this.delegates.get(viewType) != null) {
+            throw new IllegalArgumentException("An ItemViewDelegate is already registered for the viewType = " + viewType + ". Already registered ItemViewDelegate is " + this.delegates.get(viewType));
+        }
+        this.delegates.put(viewType, delegate);
+        return this;
+    }
+
+    public ItemViewDelegateManager<T> removeDelegate(ItemViewDelegate<T> delegate) {
+        if (delegate == null) {
+            throw new NullPointerException("ItemViewDelegate is null");
+        }
+        int indexToRemove = this.delegates.indexOfValue(delegate);
+        if (indexToRemove >= 0) {
+            this.delegates.removeAt(indexToRemove);
+        }
+        return this;
+    }
+
+    public ItemViewDelegateManager<T> removeDelegate(int itemType) {
+        int indexToRemove = this.delegates.indexOfKey(itemType);
+        if (indexToRemove >= 0) {
+            this.delegates.removeAt(indexToRemove);
+        }
+        return this;
+    }
+
+    public int getItemViewType(T item, int position) {
+        for (int i = this.delegates.size() - 1; i >= 0; i--) {
+            if (this.delegates.valueAt(i).isForViewType(item, position)) {
+                return this.delegates.keyAt(i);
+            }
+        }
+        throw new IllegalArgumentException("No ItemViewDelegate added that matches position=" + position + " in data source");
+    }
+
+    public void convert(ViewHolder holder, T item, int position) {
+        int delegatesCount = this.delegates.size();
+        for (int i = 0; i < delegatesCount; i++) {
+            ItemViewDelegate<T> delegate = this.delegates.valueAt(i);
+            if (delegate.isForViewType(item, position)) {
+                delegate.convert(holder, item, position);
+                return;
+            }
+        }
+        throw new IllegalArgumentException("No ItemViewDelegateManager added that matches position=" + position + " in data source");
+    }
+
+    public int getItemViewLayoutId(int viewType) {
+        return this.delegates.get(viewType).getItemViewLayoutId();
+    }
+
+    public int getItemViewType(ItemViewDelegate itemViewDelegate) {
+        return this.delegates.indexOfValue(itemViewDelegate);
+    }
+
+    public ItemViewDelegate getItemViewDelegate(T item, int position) {
+        for (int i = this.delegates.size() - 1; i >= 0; i--) {
+            ItemViewDelegate<T> delegate = this.delegates.valueAt(i);
+            if (delegate.isForViewType(item, position)) {
+                return delegate;
+            }
+        }
+        throw new IllegalArgumentException("No ItemViewDelegate added that matches position=" + position + " in data source");
+    }
+
+    public int getItemViewLayoutId(T item, int position) {
+        return getItemViewDelegate(item, position).getItemViewLayoutId();
+    }
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.com.bioeasy.healty.app.healthapp.widgets.ItemWebView android:id="@+id/wv_detail" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

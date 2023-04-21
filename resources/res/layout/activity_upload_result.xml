@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/comm_toolbar"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_10dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_50dp" android:src="@drawable/complete"/>
+        <TextView android:textSize="@dimen/TextLarge" android:id="@+id/tv_test_result" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:text="入录成功" android:textAlignment="center"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_30dp">
+            <Button android:layout_gravity="center_horizontal" android:id="@+id/bt_test_again" android:background="@drawable/bg_gray" android:layout_width="140dp" android:layout_height="40dp" android:text="@string/bt_test_again" android:layout_centerHorizontal="true"/>
+            <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/bt_share" android:background="@drawable/input_data_button_bg" android:layout_width="140dp" android:layout_height="40dp" android:layout_marginLeft="@dimen/margin_20dp" android:text="@string/bt_share" android:layout_centerHorizontal="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

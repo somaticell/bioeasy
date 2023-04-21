@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_mine_login" android:background="@color/white" android:padding="@dimen/activity_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <cn.com.bioeasy.app.widgets.CircleImageView android:id="@+id/iv_head" android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/check_bg" android:scaleType="centerCrop" android:layout_centerVertical="true" sweet:border_color="@color/button_text_color" sweet:border_width="5dp"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/health_information_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/TextMedium" android:id="@+id/tv_login_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_text" android:layout_centerInParent="true"/>
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="@dimen/margin_5dp" android:layout_marginBottom="@dimen/margin_5dp" android:layout_toRightOf="@+id/iv_head" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/TextMedium" android:textColor="@color/divider" android:id="@+id/tv_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_nickName"/>
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/divider" android:id="@+id/tv_personid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:text="@string/login_id"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/divider" android:background="@color/white" android:padding="@dimen/activity_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/my_wallet" android:layout_centerVertical="true"/>
+    <LinearLayout style="@style/separator_line"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/activity_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_score" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/TextLarge" android:textColor="@color/divider" android:id="@+id/tv_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/score" android:layout_below="@+id/tv_score" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <View android:layout_gravity="center" android:background="#ffe0e0e0" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="1px" android:layout_height="30dp"/>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/TextLarge" android:textColor="@color/divider" android:gravity="center_horizontal" android:id="@+id/tv_coupon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/divider" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coupon" android:layout_below="@+id/tv_coupon" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_all_order" android:background="@color/white" android:padding="@dimen/activity_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:layout_below="@+id/rl_mine_wallet2" android:layout_alignParentStart="true">
+        <TextView android:textSize="@dimen/TextMedium" android:id="@+id/textView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/view_all_orders" android:drawableRight="@drawable/health_information_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/TextMedium" android:textColor="@color/divider" android:id="@+id/textView13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_mine" android:layout_alignBaseline="@+id/textView11" android:layout_alignBottom="@+id/textView11" android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+    <LinearLayout style="@style/separator_line"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="@dimen/activity_padding" android:paddingBottom="@dimen/activity_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_pay" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_pay" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wait_pay" android:layout_centerHorizontal="true"/>
+            <TextView android:textColor="@color/divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/to_be_paid" android:layout_below="@+id/iv_pay" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_send" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_send" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wait_send" android:layout_centerHorizontal="true"/>
+            <TextView android:textColor="@color/divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/consignment" android:layout_below="@+id/iv_send" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_obtain" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_obtain" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wait_obtain" android:layout_centerHorizontal="true"/>
+            <TextView android:textColor="@color/divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collect_goods" android:layout_below="@+id/iv_obtain" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_pingjia" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_pingjia" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wait_evaluate" android:layout_centerHorizontal="true"/>
+            <TextView android:textColor="@color/divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/to_be_evaluated" android:layout_below="@+id/iv_pingjia" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_refund" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_refund" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/refund" android:layout_centerHorizontal="true"/>
+            <TextView android:textColor="@color/divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/refund" android:layout_below="@+id/iv_refund" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_software" android:background="@color/white" android:paddingLeft="@dimen/activity_padding" android:paddingRight="@dimen/activity_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/height" android:layout_marginTop="@dimen/margin_10dp">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/divider" android:id="@+id/tv_sofeware_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_arrow_right2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/health_information_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout style="@style/separator_line"/>
+    <RelativeLayout android:id="@+id/rl_about" android:background="@color/white" android:paddingLeft="@dimen/activity_padding" android:paddingRight="@dimen/activity_padding" android:layout_width="match_parent" android:layout_height="@dimen/height">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/health_information_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_us" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+</LinearLayout>

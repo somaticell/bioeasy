@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.com.bioeasy.app.widgets.SearchView android:id="@+id/search_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/lv_hot_search_panel" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:id="@+id/tv_hot_search" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="@dimen/margin_10dp" android:layout_marginBottom="@dimen/margin_10dp" android:text="@string/hot_search"/>
+        <View style="@style/separator_line"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/lv_hot_search" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@+id/test_list_view_frame" android:background="#f0f0f0" android:layout_width="match_parent" android:layout_height="match_parent" sweet:ptr_resistance="1.7" sweet:ptr_ratio_of_header_height_to_refresh="1.2" sweet:ptr_duration_to_close="200" sweet:ptr_duration_to_close_header="1000" sweet:ptr_keep_header_when_refresh="false">
+        <android.support.v7.widget.RecyclerView android:id="@+id/lv_search_results" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_10dp" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+</LinearLayout>

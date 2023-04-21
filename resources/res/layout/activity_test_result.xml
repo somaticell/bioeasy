@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="vertical" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/comm_toolbar" layout="@layout/comm_toolbar"/>
+    <lecho.lib.hellocharts.view.LineChartView android:id="@+id/line_chart" android:background="#ffffff" android:padding="@dimen/activity_padding" android:layout_width="match_parent" android:layout_height="250dp" android:layout_marginTop="@dimen/margin_10dp"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/activity_padding" android:paddingBottom="@dimen/activity_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp">
+            <TextView android:textSize="@dimen/TextLarge" android:id="@+id/tv_test_category" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:text="@string/test_food"/>
+            <TextView android:textSize="@dimen/TextLarge" android:id="@+id/tv_test_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:text="@string/detection_project_one"/>
+            <TextView android:textSize="@dimen/TextLarge" android:id="@+id/tv_test_result" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:text="@string/test_result_one"/>
+            <LinearLayout android:orientation="horizontal" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:layout_marginBottom="@dimen/margin_10dp">
+                <TextView android:textSize="@dimen/TextLarge" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sample_name"/>
+                <EditText android:id="@+id/id_sample_no" android:background="@drawable/edit_text_bg" android:paddingLeft="@dimen/edit_text_padding" android:layout_width="200dp" android:layout_height="30dp" android:layout_marginLeft="@dimen/margin_10dp" style="@style/comm_text_title"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/ll_test_ng_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@android:color/holo_blue_dark" android:layout_gravity="center_horizontal" android:id="@+id/tv_test_ng" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_10dp" android:text="@string/tv_test_ng" android:layout_centerHorizontal="true" android:textAlignment="center"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_5dp" android:src="@drawable/help"/>
+            </LinearLayout>
+            <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/bt_input_data" android:background="@drawable/input_data_button_bg" android:visibility="gone" android:layout_width="240dp" android:layout_height="37dp" android:layout_marginTop="@dimen/margin_5dp" android:text="@string/tv_blue_input_data" android:layout_centerHorizontal="true"/>
+            <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/bt_test_again" android:background="@drawable/input_data_button_bg" android:layout_width="240dp" android:layout_height="37dp" android:text="@string/menu_test" android:layout_centerHorizontal="true"/>
+            <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/bt_three_check" android:background="@drawable/three_check_button_bg" android:visibility="gone" android:layout_width="240dp" android:layout_height="37dp" android:layout_marginTop="@dimen/margin_10dp" android:text="@string/tv_three_check" android:layout_centerHorizontal="true"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="80dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+        <com.pnikosis.materialishprogress.ProgressWheel android:layout_gravity="center_vertical" android:id="@+id/progress_wheell" android:layout_width="20dp" android:layout_height="20dp" sweet:matProg_progressIndeterminate="false" sweet:matProg_barColor="@color/colorPrimary" sweet:matProg_rimColor="@color/colorPrimary" sweet:matProg_rimWidth="2dp" sweet:matProg_spinSpeed="0.64" sweet:matProg_barWidth="2dp"/>
+        <TextView android:textColor="@color/common_tv_dark" android:layout_gravity="center_vertical" android:id="@+id/tv_footer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="上拉加载更多"/>
+    </LinearLayout>
+</RelativeLayout>

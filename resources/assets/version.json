@@ -1,0 +1,11 @@
+{
+  "versionCode": "1",
+  "versionName": "1.0.1",
+  "forceUpdate": "1",
+  "appPackage": "http://120.77.150.254/dist/YR-010/0.1/YR-010-0.1.apk",
+  "testDataServer": "http://120.77.150.254:6003",
+  "appServer":"http://120.77.150.254:6001",
+  "document":"http://120.77.150.254/dist/YR-010/0.1/YR-010-0.1.doc",
+  "firmware":"http://120.77.150.254/dist/YR-010/0.1/YR-010-0.1.bin",
+  "description":""
+}

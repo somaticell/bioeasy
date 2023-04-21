@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:skin="http://schemas.android.com/android/skin" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10dp">
+    <ImageView android:id="@+id/iv_test_image" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="@dimen/margin_10dp" android:src="@drawable/heath_vegetables_check"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="163dp" android:layout_height="163dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/sdv_goods" android:layout_width="match_parent" android:layout_height="match_parent" sweet:actualImageScaleType="0"/>
+    </FrameLayout>
+    <TextView android:textSize="12sp" android:textColor="#222222" android:ellipsize="end" android:id="@+id/tv_goods_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:maxLines="2"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+        <TextView android:textSize="14sp" android:textColor="@color/text_red" android:id="@+id/tv_goods_price" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12sp" android:textColor="#888888" android:id="@+id/tv_goods_old_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+</LinearLayout>

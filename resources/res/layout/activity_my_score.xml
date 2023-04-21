@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/comm_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" layout="@layout/comm_toolbar"/>
+    <RelativeLayout android:id="@+id/rl_history" android:background="@drawable/score_bg" android:layout_width="match_parent" android:layout_height="140dp">
+        <TextView android:textSize="24sp" android:textColor="@color/white" android:id="@+id/tv_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100积分" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/score" android:layout_centerVertical="true" android:layout_toStartOf="@+id/tv_score"/>
+        <ImageView android:id="@+id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_20dp" android:src="@drawable/arrow_white" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:id="@+id/tv_history_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="历史积分" android:layout_centerInParent="true" android:layout_toStartOf="@+id/imageView2"/>
+    </RelativeLayout>
+    <com.flyco.tablayout.SegmentTabLayout android:layout_gravity="center_horizontal" android:id="@+id/tl_1" android:layout_width="340dp" android:layout_height="32dp" android:layout_marginTop="10dp" sweet:tl_indicator_color="#2c97de" sweet:tl_indicator_corner_radius="8dp" sweet:tl_tab_padding="20dp" sweet:tl_bar_color="#ffffff"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <FrameLayout android:id="@+id/fl_change" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <Button android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:gravity="center" android:id="@+id/bt_exchange" android:background="@drawable/selector_btn" android:layout_width="match_parent" android:layout_height="@dimen/height44" android:text="立即兑换"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" sweet:contentInsetStart="0dp" sweet:contentInsetLeft="0dp" sweet:popupTheme="@style/AppTheme.PopupOverlay" sweet:layout_scrollFlags="5">
+    <RelativeLayout android:id="@+id/rl_wrap" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:textColor="@color/udream_toolbar_text_color" android:gravity="center_vertical" android:id="@+id/iv_back" android:visibility="visible" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/btn_back" android:scaleType="centerInside"/>
+        <FrameLayout android:id="@+id/fl_search_layout" android:background="@drawable/search_bg" android:visibility="visible" android:layout_width="262dp" android:layout_height="30dp" android:layout_margin="10dp" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/TextSmall" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/search_et_input" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/print_in_market" android:drawableLeft="@drawable/search" android:drawablePadding="10dp"/>
+        </FrameLayout>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

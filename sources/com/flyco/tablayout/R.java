@@ -1,0 +1,166 @@
+package com.flyco.tablayout;
+
+public final class R {
+
+    public static final class attr {
+        public static final int mv_backgroundColor = 2130772344;
+        public static final int mv_cornerRadius = 2130772345;
+        public static final int mv_isRadiusHalfHeight = 2130772348;
+        public static final int mv_isWidthHeightEqual = 2130772349;
+        public static final int mv_strokeColor = 2130772347;
+        public static final int mv_strokeWidth = 2130772346;
+        public static final int tl_bar_color = 2130772440;
+        public static final int tl_bar_stroke_color = 2130772441;
+        public static final int tl_bar_stroke_width = 2130772442;
+        public static final int tl_divider_color = 2130772006;
+        public static final int tl_divider_padding = 2130772007;
+        public static final int tl_divider_width = 2130772008;
+        public static final int tl_iconGravity = 2130772256;
+        public static final int tl_iconHeight = 2130772254;
+        public static final int tl_iconMargin = 2130772257;
+        public static final int tl_iconVisible = 2130772255;
+        public static final int tl_iconWidth = 2130772253;
+        public static final int tl_indicator_anim_duration = 2130772009;
+        public static final int tl_indicator_anim_enable = 2130772010;
+        public static final int tl_indicator_bounce_enable = 2130772011;
+        public static final int tl_indicator_color = 2130772012;
+        public static final int tl_indicator_corner_radius = 2130772013;
+        public static final int tl_indicator_gravity = 2130772014;
+        public static final int tl_indicator_height = 2130772015;
+        public static final int tl_indicator_margin_bottom = 2130772016;
+        public static final int tl_indicator_margin_left = 2130772017;
+        public static final int tl_indicator_margin_right = 2130772018;
+        public static final int tl_indicator_margin_top = 2130772019;
+        public static final int tl_indicator_style = 2130772020;
+        public static final int tl_indicator_width = 2130772021;
+        public static final int tl_indicator_width_equal_title = 2130772022;
+        public static final int tl_tab_padding = 2130772023;
+        public static final int tl_tab_space_equal = 2130772024;
+        public static final int tl_tab_width = 2130772025;
+        public static final int tl_textAllCaps = 2130772026;
+        public static final int tl_textBold = 2130772027;
+        public static final int tl_textSelectColor = 2130772028;
+        public static final int tl_textUnselectColor = 2130772029;
+        public static final int tl_textsize = 2130772030;
+        public static final int tl_underline_color = 2130772031;
+        public static final int tl_underline_gravity = 2130772032;
+        public static final int tl_underline_height = 2130772033;
+    }
+
+    public static final class id {
+        public static final int BLOCK = 2131230747;
+        public static final int BOTTOM = 2131230745;
+        public static final int LEFT = 2131230782;
+        public static final int NORMAL = 2131230748;
+        public static final int RIGHT = 2131230783;
+        public static final int TOP = 2131230746;
+        public static final int TRIANGLE = 2131230749;
+        public static final int iv_tab_icon = 2131231411;
+        public static final int ll_tap = 2131231410;
+        public static final int rtv_msg_tip = 2131231409;
+        public static final int tv_tab_title = 2131231408;
+    }
+
+    public static final class layout {
+        public static final int layout_tab = 2130968738;
+        public static final int layout_tab_bottom = 2130968739;
+        public static final int layout_tab_left = 2130968740;
+        public static final int layout_tab_right = 2130968741;
+        public static final int layout_tab_segment = 2130968742;
+        public static final int layout_tab_top = 2130968743;
+    }
+
+    public static final class styleable {
+        public static final int[] CommonTabLayout = {cn.com.bioeasy.healty.app.healthapp.R.attr.tl_divider_color, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_divider_padding, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_divider_width, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_anim_duration, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_anim_enable, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_bounce_enable, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_color, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_corner_radius, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_gravity, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_height, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_margin_bottom, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_margin_left, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_margin_right, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_margin_top, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_style, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_width, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_tab_padding, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_tab_space_equal, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_tab_width, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_textAllCaps, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_textBold, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_textSelectColor, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_textUnselectColor, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_textsize, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_underline_color, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_underline_gravity, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_underline_height, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_iconWidth, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_iconHeight, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_iconVisible, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_iconGravity, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_iconMargin};
+        public static final int CommonTabLayout_tl_divider_color = 0;
+        public static final int CommonTabLayout_tl_divider_padding = 1;
+        public static final int CommonTabLayout_tl_divider_width = 2;
+        public static final int CommonTabLayout_tl_iconGravity = 30;
+        public static final int CommonTabLayout_tl_iconHeight = 28;
+        public static final int CommonTabLayout_tl_iconMargin = 31;
+        public static final int CommonTabLayout_tl_iconVisible = 29;
+        public static final int CommonTabLayout_tl_iconWidth = 27;
+        public static final int CommonTabLayout_tl_indicator_anim_duration = 3;
+        public static final int CommonTabLayout_tl_indicator_anim_enable = 4;
+        public static final int CommonTabLayout_tl_indicator_bounce_enable = 5;
+        public static final int CommonTabLayout_tl_indicator_color = 6;
+        public static final int CommonTabLayout_tl_indicator_corner_radius = 7;
+        public static final int CommonTabLayout_tl_indicator_gravity = 8;
+        public static final int CommonTabLayout_tl_indicator_height = 9;
+        public static final int CommonTabLayout_tl_indicator_margin_bottom = 10;
+        public static final int CommonTabLayout_tl_indicator_margin_left = 11;
+        public static final int CommonTabLayout_tl_indicator_margin_right = 12;
+        public static final int CommonTabLayout_tl_indicator_margin_top = 13;
+        public static final int CommonTabLayout_tl_indicator_style = 14;
+        public static final int CommonTabLayout_tl_indicator_width = 15;
+        public static final int CommonTabLayout_tl_tab_padding = 16;
+        public static final int CommonTabLayout_tl_tab_space_equal = 17;
+        public static final int CommonTabLayout_tl_tab_width = 18;
+        public static final int CommonTabLayout_tl_textAllCaps = 19;
+        public static final int CommonTabLayout_tl_textBold = 20;
+        public static final int CommonTabLayout_tl_textSelectColor = 21;
+        public static final int CommonTabLayout_tl_textUnselectColor = 22;
+        public static final int CommonTabLayout_tl_textsize = 23;
+        public static final int CommonTabLayout_tl_underline_color = 24;
+        public static final int CommonTabLayout_tl_underline_gravity = 25;
+        public static final int CommonTabLayout_tl_underline_height = 26;
+        public static final int[] MsgView = {cn.com.bioeasy.healty.app.healthapp.R.attr.mv_backgroundColor, cn.com.bioeasy.healty.app.healthapp.R.attr.mv_cornerRadius, cn.com.bioeasy.healty.app.healthapp.R.attr.mv_strokeWidth, cn.com.bioeasy.healty.app.healthapp.R.attr.mv_strokeColor, cn.com.bioeasy.healty.app.healthapp.R.attr.mv_isRadiusHalfHeight, cn.com.bioeasy.healty.app.healthapp.R.attr.mv_isWidthHeightEqual};
+        public static final int MsgView_mv_backgroundColor = 0;
+        public static final int MsgView_mv_cornerRadius = 1;
+        public static final int MsgView_mv_isRadiusHalfHeight = 4;
+        public static final int MsgView_mv_isWidthHeightEqual = 5;
+        public static final int MsgView_mv_strokeColor = 3;
+        public static final int MsgView_mv_strokeWidth = 2;
+        public static final int[] SegmentTabLayout = {cn.com.bioeasy.healty.app.healthapp.R.attr.tl_divider_color, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_divider_padding, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_divider_width, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_anim_duration, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_anim_enable, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_bounce_enable, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_color, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_corner_radius, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_height, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_margin_bottom, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_margin_left, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_margin_right, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_margin_top, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_tab_padding, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_tab_space_equal, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_tab_width, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_textAllCaps, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_textBold, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_textSelectColor, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_textUnselectColor, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_textsize, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_bar_color, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_bar_stroke_color, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_bar_stroke_width};
+        public static final int SegmentTabLayout_tl_bar_color = 21;
+        public static final int SegmentTabLayout_tl_bar_stroke_color = 22;
+        public static final int SegmentTabLayout_tl_bar_stroke_width = 23;
+        public static final int SegmentTabLayout_tl_divider_color = 0;
+        public static final int SegmentTabLayout_tl_divider_padding = 1;
+        public static final int SegmentTabLayout_tl_divider_width = 2;
+        public static final int SegmentTabLayout_tl_indicator_anim_duration = 3;
+        public static final int SegmentTabLayout_tl_indicator_anim_enable = 4;
+        public static final int SegmentTabLayout_tl_indicator_bounce_enable = 5;
+        public static final int SegmentTabLayout_tl_indicator_color = 6;
+        public static final int SegmentTabLayout_tl_indicator_corner_radius = 7;
+        public static final int SegmentTabLayout_tl_indicator_height = 8;
+        public static final int SegmentTabLayout_tl_indicator_margin_bottom = 9;
+        public static final int SegmentTabLayout_tl_indicator_margin_left = 10;
+        public static final int SegmentTabLayout_tl_indicator_margin_right = 11;
+        public static final int SegmentTabLayout_tl_indicator_margin_top = 12;
+        public static final int SegmentTabLayout_tl_tab_padding = 13;
+        public static final int SegmentTabLayout_tl_tab_space_equal = 14;
+        public static final int SegmentTabLayout_tl_tab_width = 15;
+        public static final int SegmentTabLayout_tl_textAllCaps = 16;
+        public static final int SegmentTabLayout_tl_textBold = 17;
+        public static final int SegmentTabLayout_tl_textSelectColor = 18;
+        public static final int SegmentTabLayout_tl_textUnselectColor = 19;
+        public static final int SegmentTabLayout_tl_textsize = 20;
+        public static final int[] SlidingTabLayout = {cn.com.bioeasy.healty.app.healthapp.R.attr.tl_divider_color, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_divider_padding, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_divider_width, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_color, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_corner_radius, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_gravity, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_height, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_margin_bottom, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_margin_left, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_margin_right, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_margin_top, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_style, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_width, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_indicator_width_equal_title, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_tab_padding, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_tab_space_equal, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_tab_width, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_textAllCaps, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_textBold, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_textSelectColor, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_textUnselectColor, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_textsize, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_underline_color, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_underline_gravity, cn.com.bioeasy.healty.app.healthapp.R.attr.tl_underline_height};
+        public static final int SlidingTabLayout_tl_divider_color = 0;
+        public static final int SlidingTabLayout_tl_divider_padding = 1;
+        public static final int SlidingTabLayout_tl_divider_width = 2;
+        public static final int SlidingTabLayout_tl_indicator_color = 3;
+        public static final int SlidingTabLayout_tl_indicator_corner_radius = 4;
+        public static final int SlidingTabLayout_tl_indicator_gravity = 5;
+        public static final int SlidingTabLayout_tl_indicator_height = 6;
+        public static final int SlidingTabLayout_tl_indicator_margin_bottom = 7;
+        public static final int SlidingTabLayout_tl_indicator_margin_left = 8;
+        public static final int SlidingTabLayout_tl_indicator_margin_right = 9;
+        public static final int SlidingTabLayout_tl_indicator_margin_top = 10;
+        public static final int SlidingTabLayout_tl_indicator_style = 11;
+        public static final int SlidingTabLayout_tl_indicator_width = 12;
+        public static final int SlidingTabLayout_tl_indicator_width_equal_title = 13;
+        public static final int SlidingTabLayout_tl_tab_padding = 14;
+        public static final int SlidingTabLayout_tl_tab_space_equal = 15;
+        public static final int SlidingTabLayout_tl_tab_width = 16;
+        public static final int SlidingTabLayout_tl_textAllCaps = 17;
+        public static final int SlidingTabLayout_tl_textBold = 18;
+        public static final int SlidingTabLayout_tl_textSelectColor = 19;
+        public static final int SlidingTabLayout_tl_textUnselectColor = 20;
+        public static final int SlidingTabLayout_tl_textsize = 21;
+        public static final int SlidingTabLayout_tl_underline_color = 22;
+        public static final int SlidingTabLayout_tl_underline_gravity = 23;
+        public static final int SlidingTabLayout_tl_underline_height = 24;
+    }
+}

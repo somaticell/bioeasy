@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_bottom_menu_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+    <LinearLayout android:id="@+id/lin_home" style="@style/tab_bar_ll">
+        <ImageView android:id="@+id/iv_home" android:src="@drawable/selector_bottom_appointment" style="@style/tab_bar_img"/>
+        <TextView android:id="@+id/tv_home" android:text="@string/menu_home" style="@style/tab_bar_text"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/lin_record" style="@style/tab_bar_ll">
+        <ImageView android:id="@+id/iv_record" android:src="@drawable/selector_bottom_ble" style="@style/tab_bar_img"/>
+        <TextView android:id="@+id/tv_record" android:text="@string/menu_record" style="@style/tab_bar_text"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/lin_test" style="@style/tab_bar_ll">
+        <ImageView android:id="@+id/iv_test" android:src="@drawable/health_test_normal" style="@style/tab_bar_img"/>
+        <TextView android:id="@+id/tv_test" android:text="@string/menu_test" style="@style/tab_bar_text"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/lin_shopping" android:visibility="gone" style="@style/tab_bar_ll">
+        <ImageView android:id="@+id/iv_shopping" android:layout_width="wrap_content" android:src="@drawable/selector_bottom_shopping" style="@style/tab_bar_img"/>
+        <TextView android:id="@+id/tv_shopping" android:text="@string/menu_shopping" style="@style/tab_bar_text"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/lin_mine" style="@style/tab_bar_ll">
+        <ImageView android:id="@+id/iv_mine" android:src="@drawable/selector_bottom_mine" style="@style/tab_bar_img"/>
+        <TextView android:id="@+id/tv_mine" android:text="@string/menu_mine" style="@style/tab_bar_text"/>
+    </LinearLayout>
+</LinearLayout>

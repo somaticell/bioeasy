@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/order_product_flayout" android:background="@drawable/view_bg_clickable_selector" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="100dp">
+    <HorizontalScrollView android:layout_gravity="center_vertical" android:id="@+id/order_product_scrollv" android:focusable="true" android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginLeft="@dimen/margin_10dp" android:layout_marginRight="108dp">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/product_list_gallery_lyaout" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </HorizontalScrollView>
+    <TextView android:gravity="center" android:layout_gravity="right" android:id="@+id/order_product_count_txtv" android:layout_width="80dp" android:layout_height="match_parent" android:layout_marginRight="28dp" android:text="@string/five_goods" android:drawableRight="@drawable/health_information_arrow" style="@style/textStyle.Normal.black"/>
+</FrameLayout>

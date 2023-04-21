@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@+id/test_list_view_frame" android:background="#f0f0f0" android:layout_width="match_parent" android:layout_height="match_parent" sweet:ptr_resistance="1.7" sweet:ptr_ratio_of_header_height_to_refresh="1.2" sweet:ptr_duration_to_close="200" sweet:ptr_duration_to_close_header="1000" sweet:ptr_pull_to_fresh="false" sweet:ptr_keep_header_when_refresh="true">
+        <android.support.v7.widget.RecyclerView android:id="@+id/order_listv" android:background="@color/white" android:scrollbars="none" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="#00000000" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true"/>
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+</LinearLayout>

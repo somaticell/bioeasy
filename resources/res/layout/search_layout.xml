@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:skin="http://schemas.android.com/android/skin" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingRight="16dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:textColor="@color/udream_toolbar_text_color" android:gravity="center_vertical" android:id="@+id/search_btn_back" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_back" android:scaleType="centerInside"/>
+        <FrameLayout android:background="@drawable/search_bg" android:layout_width="0dp" android:layout_height="30dp" android:layout_marginLeft="24dp" android:layout_weight="9">
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/search_iv_delete" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/delete"/>
+            <EditText android:textSize="@dimen/text_size_12" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/search_et_input" android:background="@null" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="17dp" android:layout_marginRight="15dp" android:hint="请输入关键字" android:singleLine="true" android:drawableLeft="@drawable/search" android:drawablePadding="5dp" android:layout_toLeftOf="@+id/search_iv_delete" android:inputType="text" android:imeOptions="actionSearch"/>
+        </FrameLayout>
+        <Button android:textSize="@dimen/text_size_12" android:textColor="@color/app_primary" android:id="@+id/search_btn" android:background="@null" android:layout_width="28dp" android:layout_height="14dp" android:layout_marginLeft="16dp" android:text="搜索"/>
+    </LinearLayout>
+    <ListView android:id="@+id/search_lv_tips" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp"/>
+</LinearLayout>

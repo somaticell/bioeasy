@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/comm_toolbar" layout="@layout/comm_toolbar"/>
+    <RelativeLayout android:id="@+id/tilte" android:background="@color/white" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="@dimen/margin_10dp" android:layout_below="@+id/comm_toolbar">
+        <TextView android:id="@+id/tv_current_bluename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_17dp" android:text="@string/tv_blue_connect_name" android:layout_centerVertical="true"/>
+        <Button android:textColor="@color/app_primary" android:id="@+id/bt_change" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tv_blue_change" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/rl_mine_footer" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_10dp" android:layout_below="@+id/tilte">
+        <RelativeLayout android:id="@+id/rl_led_change" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/height">
+            <TextView android:textSize="@dimen/text_size_14" android:id="@+id/tv_check_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_17dp" android:text="@string/led_liangdu" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_10dp" android:src="@drawable/health_information_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:visibility="gone" style="@style/separator_line"/>
+        <RelativeLayout android:id="@+id/rl_auto_power_failure" android:layout_width="match_parent" android:layout_height="@dimen/height">
+            <TextView android:textSize="@dimen/text_size_14" android:id="@+id/tv_sofeware_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_17dp" android:text="@string/zd_time" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_arrow_right2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_10dp" android:src="@drawable/health_information_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View style="@style/separator_line"/>
+        <RelativeLayout android:id="@+id/rl_check_num" android:layout_width="match_parent" android:layout_height="@dimen/height">
+            <ImageView android:id="@+id/iv_arrow_right3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_10dp" android:src="@drawable/health_information_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/text_size_14" android:id="@+id/tv_pwm_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_17dp" android:text="@string/test_paper" android:layout_centerVertical="true" android:layout_marginStart="18dp" android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+        <View style="@style/separator_line"/>
+        <RelativeLayout android:id="@+id/rl_check_pwm" android:layout_width="match_parent" android:layout_height="@dimen/height">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_10dp" android:src="@drawable/health_information_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/text_size_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_17dp" android:text="@string/dl_update" android:layout_centerVertical="true" android:layout_marginStart="18dp" android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+        <View style="@style/separator_line"/>
+        <RelativeLayout android:id="@+id/rl_load_file" android:visibility="visible" android:layout_width="match_parent" android:layout_height="40dp">
+            <Button android:textColor="@color/common_bg_light" android:id="@+id/btn_send_pwm" android:background="@color/app_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_10dp" android:text="@string/upgrade" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/text_size_14" android:id="@+id/tv_pwm_file" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_17dp" android:text="" android:layout_centerVertical="true" android:layout_marginStart="18dp" android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

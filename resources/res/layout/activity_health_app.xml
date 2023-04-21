@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.widget.DrawerLayout android:id="@+id/dlayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <include layout="@layout/activity_health_main"/>
+        <fragment android:layout_gravity="start" android:visibility="gone" android:layout_width="250dp" android:layout_height="match_parent" class="cn.com.bioeasy.healty.app.healthapp.modules.slidemenu.SlideMenuFragment"/>
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

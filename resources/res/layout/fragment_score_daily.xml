@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="@dimen/height" android:layout_marginTop="2dp">
+        <TextView android:textSize="@dimen/text_size_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="日常任务每日最多领取300积分，今日已经领取100积分" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/height" android:layout_marginTop="2dp">
+        <TextView android:id="@+id/tv_check_record" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nickname" style="@style/comm_text_title"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10dp" android:text="+20" android:layout_centerVertical="true" android:layout_toEndOf="@+id/tv_check_record"/>
+        <ImageView android:id="@+id/iv_arrow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_20dp" android:src="@drawable/health_information_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/text_size_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_10dp" android:text="待完成" android:layout_centerVertical="true" android:layout_toStartOf="@+id/iv_arrow1"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/height" android:layout_marginTop="2dp">
+        <TextView android:id="@+id/tv_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_every_day" style="@style/comm_text_title"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10dp" android:text="+20" android:layout_centerVertical="true" android:layout_toEndOf="@+id/tv_sign"/>
+        <ImageView android:id="@+id/iv_arrow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_20dp" android:src="@drawable/health_information_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/text_size_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_10dp" android:text="待完成" android:layout_centerVertical="true" android:layout_toStartOf="@+id/iv_arrow2"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/height" android:layout_marginTop="2dp">
+        <TextView android:id="@+id/tv_read" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reading_food_information" style="@style/comm_text_title"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10dp" android:text="+20" android:layout_centerVertical="true" android:layout_toEndOf="@+id/tv_read"/>
+        <ImageView android:id="@+id/iv_arrow3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_20dp" android:src="@drawable/health_information_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/text_size_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_10dp" android:text="待完成" android:layout_centerVertical="true" android:layout_toStartOf="@+id/iv_arrow3"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/height" android:layout_marginTop="2dp">
+        <TextView android:id="@+id/tv_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sharing_friends" style="@style/comm_text_title"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_10dp" android:text="+20" android:layout_centerVertical="true" android:layout_toEndOf="@+id/tv_share"/>
+        <ImageView android:id="@+id/iv_arrow4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_20dp" android:src="@drawable/health_information_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/text_size_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_10dp" android:text="完成" android:layout_centerVertical="true" android:layout_toStartOf="@+id/iv_arrow4"/>
+    </RelativeLayout>
+</LinearLayout>

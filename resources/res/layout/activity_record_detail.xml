@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/comm_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" layout="@layout/comm_toolbar"/>
+        <lecho.lib.hellocharts.view.LineChartView android:id="@+id/line_chart" android:background="#ffffff" android:padding="@dimen/activity_padding" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginTop="@dimen/margin_10dp"/>
+        <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/activity_padding" android:paddingTop="@dimen/margin_10dp" android:paddingRight="@dimen/activity_padding" android:paddingBottom="@dimen/margin_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp">
+            <RelativeLayout android:id="@+id/panel_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp">
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/divider" android:id="@+id/tv_sample_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/test_food"/>
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/divider" android:id="@+id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/test_time" android:layout_below="@+id/tv_sample_name"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/divider" android:id="@+id/tv_test_result" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:text="@string/test_result_one" android:layout_below="@+id/panel_1"/>
+            <RelativeLayout android:id="@+id/panel_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tv_test_result">
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/divider" android:id="@+id/tv_test_items_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:text="@string/detection_project_one"/>
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/divider" android:id="@+id/tv_test_items" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:text="" android:layout_toRightOf="@+id/tv_test_items_label"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/panel_3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/panel_2">
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/divider" android:id="@+id/tv_test_values_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:text="@string/detection_value"/>
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/divider" android:id="@+id/tv_test_items_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:text="" android:layout_toRightOf="@+id/tv_test_values_label"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="@dimen/margin_10dp" android:text="@string/source"/>
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/divider" android:id="@+id/tv_address" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="0dp" android:layout_marginBottom="@dimen/margin_10dp" android:text="xxx"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="@dimen/margin_10dp" android:text="@string/remarks"/>
+            <net.oschina.common.widget.RichEditText android:textSize="@dimen/text_size_16" android:textColor="#111111" android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/tv_remark" android:background="@drawable/edit_text_bg" android:padding="@dimen/edit_text_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:hint="@string/UPLOAD_REMARKS" android:minLines="3"/>
+        </LinearLayout>
+        <RelativeLayout android:paddingLeft="@dimen/activity_padding" android:paddingRight="@dimen/activity_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" sweet:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <cn.com.bioeasy.healty.app.healthapp.widgets.gallary.widget.TweetPicturesPreviewer android:id="@+id/recycler_images" android:layout_width="match_parent" android:layout_height="110dp"/>
+            <ImageView android:id="@+id/iv_picture" android:padding="5dp" android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_tweet_add"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp">
+            <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/test_upload_btn" android:background="@drawable/input_data_button_bg" android:layout_width="240dp" android:layout_height="37dp" android:text="@string/shopping_address_save" android:layout_centerHorizontal="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TableLayout android:id="@+id/table" android:layout_width="match_parent" android:layout_height="31dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/table_frame_gray" android:layout_width="40dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/colorTitle" android:gravity="center" android:layout_width="match_parent" android:layout_height="31dp" android:text="@string/date"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/table_frame_gray" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/colorTitle" android:gravity="center" android:layout_width="match_parent" android:layout_height="31dp" android:text="@string/sample_name"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/table_frame_gray" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/colorTitle" android:gravity="center" android:layout_width="match_parent" android:layout_height="31dp" android:text="@string/detection_project"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/table_frame_gray" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/colorTitle" android:gravity="center" android:layout_width="match_parent" android:layout_height="31dp" android:text="@string/detection_result"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/table_frame_gray" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/colorTitle" android:gravity="center" android:layout_width="match_parent" android:layout_height="31dp" android:text="@string/state"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/table_frame_gray" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.8">
+                    <TextView android:textSize="@dimen/TextSmall" android:textColor="@color/colorTitle" android:gravity="center" android:layout_width="match_parent" android:layout_height="31dp" android:text="@string/details"/>
+                </LinearLayout>
+            </TableRow>
+        </LinearLayout>
+    </TableLayout>
+    <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@+id/test_list_view_frame" android:background="#f0f0f0" android:layout_width="match_parent" android:layout_height="match_parent" sweet:ptr_resistance="1.7" sweet:ptr_ratio_of_header_height_to_refresh="1.2" sweet:ptr_duration_to_close="200" sweet:ptr_duration_to_close_header="1000" sweet:ptr_keep_header_when_refresh="false">
+        <android.support.v7.widget.RecyclerView android:id="@+id/rl_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+</LinearLayout>

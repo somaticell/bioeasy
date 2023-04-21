@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/tv_close" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/close" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="35dp">
+        <cn.com.bioeasy.app.widgets.CircleImageView android:id="@+id/iv_head" android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/check_bg" android:scaleType="centerCrop" android:layout_centerInParent="true" android:layout_centerVertical="true" sweet:border_color="@color/button_text_color" sweet:border_width="5dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="45dp">
+        <EditText android:textSize="@dimen/text_size_14" android:textColor="@color/black_alpha_deep" android:textColorHint="@color/hint_color" android:id="@+id/edt_account" android:background="@drawable/btn_corner_bg" android:paddingLeft="12dp" android:paddingRight="8dp" android:layout_width="330dp" android:layout_height="@dimen/height44" android:hint="@string/hint_account" android:singleLine="true" android:maxLength="20" android:layout_centerHorizontal="true"/>
+        <RelativeLayout android:id="@+id/rl_pwd_wrap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:layout_below="@+id/edt_account" android:layout_centerHorizontal="true">
+            <EditText android:textSize="@dimen/text_size_14" android:textColor="@color/black_alpha_deep" android:textColorHint="@color/hint_color" android:id="@+id/edt_psw" android:background="@drawable/btn_corner_bg" android:paddingLeft="12dp" android:paddingRight="8dp" android:layout_width="330dp" android:layout_height="@dimen/height44" android:hint="@string/hint_psw" android:password="true" android:singleLine="true" android:maxLength="16" android:inputType="numberPassword"/>
+            <FrameLayout android:layout_width="330dp" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/height44">
+                    <CheckBox android:id="@+id/cb_pwd" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:button="@drawable/selector_login__pwd_cbox" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </FrameLayout>
+        </RelativeLayout>
+        <Button android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:id="@+id/login" android:background="@drawable/selector_login_btn" android:layout_width="330dp" android:layout_height="@dimen/height44" android:layout_marginTop="@dimen/margin_10dp" android:text="@string/login_text" android:layout_below="@+id/rl_pwd_wrap" android:layout_centerHorizontal="true"/>
+        <RelativeLayout android:id="@+id/rl_forgetpwd" android:layout_width="330dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp" android:layout_below="@+id/login" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="#60cdff" android:id="@+id/tv_forgetpsw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forget_psw" android:layout_alignParentRight="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/lr_not_count" android:layout_width="330dp" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_below="@+id/rl_forgetpwd" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/black_alpha_deep" android:gravity="center" android:id="@+id/tv_no_count_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="110dp" android:text="@string/login_not_account"/>
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="#60cdff" android:gravity="center" android:id="@+id/tv_register" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/register" android:layout_toRightOf="@+id/tv_no_count_title"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_fast" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_below="@+id/lr_not_count">
+            <TextView android:textSize="@dimen/text_size_12" android:id="@+id/tv_fast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fast_login" android:layout_centerInParent="true"/>
+            <View android:background="#999999" android:layout_width="130dp" android:layout_height="1px" android:layout_marginRight="@dimen/margin_10dp" android:layout_centerVertical="true" android:layout_toStartOf="@+id/tv_fast"/>
+            <View android:background="#999999" android:layout_width="130dp" android:layout_height="1px" android:layout_marginLeft="@dimen/margin_10dp" android:layout_centerVertical="true" android:layout_toEndOf="@+id/tv_fast"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_fast">
+            <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20dp" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_wechat_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_50dp" android:src="@drawable/wechat"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_20dp" android:layout_weight="1">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_50dp" android:src="@drawable/qq"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

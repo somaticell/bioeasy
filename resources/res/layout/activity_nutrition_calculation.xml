@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/comm_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" layout="@layout/comm_toolbar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/rl_mine_footer" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_10dp">
+        <RelativeLayout android:id="@+id/rl_led_change" android:layout_width="match_parent" android:layout_height="@dimen/height">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/udream_toolbar_text_color" android:gravity="right" android:id="@+id/tv_person" android:layout_width="120dp" android:layout_height="wrap_content" android:text="选择食品：" android:layout_centerVertical="true"/>
+            <AutoCompleteTextView android:textSize="@dimen/text_size_12" android:textColor="@color/black_alpha_deep" android:textColorHint="@color/hint_color" android:id="@+id/ac_txt" android:background="@null" android:paddingLeft="@dimen/padding_left10dp" android:layout_width="250dp" android:layout_height="wrap_content" android:hint="输入名称或拼音首字母" android:singleLine="true" android:maxLength="12" android:completionThreshold="1" android:layout_centerVertical="true" android:dropDownWidth="230dp" android:imeOptions="actionSearch" android:dropDownHeight="200dp" android:layout_toEndOf="@+id/tv_person"/>
+        </RelativeLayout>
+        <View android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="1px" android:alpha="0.7"/>
+        <RelativeLayout android:id="@+id/rl_auto_power_failure" android:layout_width="match_parent" android:layout_height="@dimen/height">
+            <EditText android:textSize="@dimen/text_size_12" android:textColor="@color/black_alpha_deep" android:textColorHint="@color/hint_color" android:id="@+id/et_input" android:background="@null" android:paddingLeft="@dimen/padding_left10dp" android:paddingRight="8dp" android:layout_width="250dp" android:layout_height="@dimen/height" android:text="100" android:hint="请输入数量" android:singleLine="true" android:layout_alignParentTop="true" android:inputType="number" android:layout_toEndOf="@+id/tv_phone" android:layout_alignParentEnd="true"/>
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/udream_toolbar_text_color" android:gravity="right" android:id="@+id/tv_phone" android:layout_width="120dp" android:layout_height="wrap_content" android:text="输入摄入量(g)：" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+        <View android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="1px" android:alpha="0.7"/>
+        <Button android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/cacle" android:background="@drawable/selector_login_btn" android:layout_width="330dp" android:layout_height="@dimen/height44" android:layout_marginTop="@dimen/margin_10dp" android:text="计算"/>
+        <include layout="@layout/nutrition_calculation_result"/>
+    </LinearLayout>
+</LinearLayout>

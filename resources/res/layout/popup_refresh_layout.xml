@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/bg_white" android:layout_width="150dp" android:layout_height="90dp">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_refalsh" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp">
+        <ImageView android:layout_width="20dp" android:layout_height="18dp" android:layout_marginRight="@dimen/margin_10dp" android:src="@drawable/reflash"/>
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/refresh" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_share" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10dp">
+        <ImageView android:layout_width="20dp" android:layout_height="18dp" android:layout_marginRight="@dimen/margin_10dp" android:src="@drawable/share_bg"/>
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/share" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+    </LinearLayout>
+</LinearLayout>

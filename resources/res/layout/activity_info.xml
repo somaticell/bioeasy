@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/all_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/comm_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" layout="@layout/comm_toolbar"/>
+    <RelativeLayout android:id="@+id/rl_header" android:background="@color/white" android:layout_width="match_parent" android:layout_height="75dp" android:layout_marginTop="@dimen/margin_10dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_header" style="@style/comm_text_title"/>
+        <ImageView android:id="@+id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_20dp" android:src="@drawable/health_information_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <cn.com.bioeasy.app.widgets.CircleImageView android:id="@+id/iv_head" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginLeft="@dimen/margin_20dp" android:layout_marginRight="@dimen/margin_10dp" android:src="@drawable/check_bg" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_toStartOf="@+id/iv_arrow" sweet:border_color="@color/button_text_color" sweet:border_width="5dp"/>
+    </RelativeLayout>
+    <View style="@style/separator_line"/>
+    <RelativeLayout android:id="@+id/rl_nickname" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/height">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nickname" style="@style/comm_text_title"/>
+        <TextView android:textSize="@dimen/text_size_14" android:id="@+id/tv_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_20dp" android:text="无" android:drawableRight="@drawable/health_information_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View style="@style/separator_line"/>
+    <RelativeLayout android:id="@+id/rl_bind_phone" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/height">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bind_phone" style="@style/comm_text_title"/>
+        <TextView android:textSize="@dimen/text_size_14" android:id="@+id/tv_bind_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_20dp" android:text="@string/not_bind_phone" android:drawableRight="@drawable/health_information_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View style="@style/separator_line"/>
+    <RelativeLayout android:id="@+id/rl_bind_other" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/height">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bind_other_count" style="@style/comm_text_title"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_20dp" android:src="@drawable/health_information_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View style="@style/separator_line"/>
+    <RelativeLayout android:id="@+id/rl_edit_pwd" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/height">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_pwd" style="@style/comm_text_title"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_20dp" android:src="@drawable/health_information_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/height" android:layout_marginTop="@dimen/margin_20dp">
+        <Button android:textColor="@color/font_orienge" android:id="@+id/bt_exit_count" android:background="@drawable/btn_corner__red_border_bg" android:layout_width="300dp" android:layout_height="@dimen/height" android:text="@string/exit_count" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>
